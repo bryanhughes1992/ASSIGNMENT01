@@ -24,14 +24,14 @@ namespace ASSIGNMENT01_BRYANHUGHES.Controllers
         }
 
         //QUESTION #3 - Greeting
-        public void GetGreeting()
+        public void Greeting()
         {
             string Greeting = "Hello World!";
             Console.Write(Greeting);
         }
 
         //QUESTION #4 - Advanced Greeting
-        public void CountGuests(int id)
+        public void Greeting(int id)
         {
             int NumberOfPeople = id;
             string Greeting = $"Greetings to {NumberOfPeople} people!";
