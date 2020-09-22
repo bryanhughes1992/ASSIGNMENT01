@@ -7,39 +7,39 @@ using System.Web.Http;
 
 namespace ASSIGNMENT01_BRYANHUGHES.Controllers
 {
-    public class ASSIGNMENTController : ApiController
+    public class AssignmentController : ApiController
     {
-        //QUESTION #1 - AddTen
-        public int AddTen(int id)
+        // GET: /api/assignment
+        public int Get(int id)
         {  
             int sum = id + 10;
             return sum;
         }
 
-        //QUESTION #2 - Square
-        public int Square(int id)
+        // GET: api/assignment/{id}
+        public int GetSquare(int id)
         {
             int SquaredNumber = id * id;
             return SquaredNumber;
         }
 
-        //QUESTION #3 - Greeting
-        public void Greeting()
+        // POST: api/assignment
+        public void PostGreeting()
         {
             string Greeting = "Hello World!";
             Console.Write(Greeting);
         }
 
-        //QUESTION #4 - Advanced Greeting
-        public void Greeting(int id)
+        // POST api/assignment/{id}
+        public void PostGreeting(int id)
         {
             int NumberOfPeople = id;
             string Greeting = $"Greetings to {NumberOfPeople} people!";
             Console.Write(Greeting);
         }
 
-        //BONUS QUESTION - HostingCost
-        public double HostingCost(int id)
+        // GET: /api/assignment
+        public double GetHostingCost(int id)
         {
             int DaysStayed = id;
             int FortNite = 14;
