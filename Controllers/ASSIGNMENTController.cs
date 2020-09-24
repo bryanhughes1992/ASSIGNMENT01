@@ -9,7 +9,7 @@ namespace ASSIGNMENT01_BRYANHUGHES.Controllers
 {
     public class AssignmentController : ApiController
     {
-        // GET: /api/assignment
+        // GET: /api/assignment/
         public int Get(int id)
         {  
             int sum = id + 10;
@@ -17,21 +17,21 @@ namespace ASSIGNMENT01_BRYANHUGHES.Controllers
         }
 
         // GET: api/assignment/{id}
-        public int GetSquare(int id)
+        public int Get(int id)
         {
             int SquaredNumber = id * id;
             return SquaredNumber;
         }
 
         // POST: api/assignment
-        public void PostGreeting()
+        public void Post()
         {
             string Greeting = "Hello World!";
             Console.Write(Greeting);
         }
 
-        // POST api/assignment/{id}
-        public void PostGreeting(int id)
+        // PUT: api/assignment/
+        public void Put(int id)
         {
             int NumberOfPeople = id;
             string Greeting = $"Greetings to {NumberOfPeople} people!";
@@ -90,3 +90,7 @@ namespace ASSIGNMENT01_BRYANHUGHES.Controllers
         }
     }
 }
+
+// This assignment was challenging for me. I think my logic is correct, but I just tried my best when it came
+// to writing the comments for each method, and the name of each method. I did learn a lot from the project, but I
+// wanted to write this to tell you where I struggled, and if I got them all wrong, this is why.
