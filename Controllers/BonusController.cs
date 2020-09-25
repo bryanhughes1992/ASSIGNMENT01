@@ -7,32 +7,10 @@ using System.Web.Http;
 
 namespace ASSIGNMENT01_N00481777_BRYANHUGHES.Controllers
 {
-    public class AssignmentController : ApiController
+    public class BonusController : ApiController
     {
-        // GET: api/assignment/{id}
-        public int Get(int id)
-        {
-            int SquaredNumber = id * id;
-            return SquaredNumber;
-        }
-
-        // POST: api/assignment
-        public void Post()
-        {
-            string Greeting = "Hello World!";
-            Console.Write(Greeting);
-        }
-
-        // PUT: api/assignment/
-        public void Put(int id)
-        {
-            int NumberOfPeople = id;
-            string Greeting = $"Greetings to {NumberOfPeople} people!";
-            Console.Write(Greeting);
-        }
-
-        // GET: /api/assignment
-        public double GetHostingCost(int id)
+        // GET: /api/bonus
+        public double Get(int id)
         {
             int DaysStayed = id;
             int FortNite = 14;

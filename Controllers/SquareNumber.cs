@@ -7,13 +7,13 @@ using System.Web.Http;
 
 namespace ASSIGNMENT01_N00481777_BRYANHUGHES.Controllers
 {
-    public class AddTenController : ApiController
+    public class SquareNumberController : ApiController
     {
-        // GET: api/AddTen/
+        // GET: api/SquareNumber/
         public int Get(int id)
         {
-            int sum = id + 10;
-            return sum;
+            int SquaredNumber = id * id;
+            return SquaredNumber;
         }
     }
 }
